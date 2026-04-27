@@ -1,0 +1,9 @@
+node_modules/
+.runtime/
+.env
+.env.*
+!.env.example
+server.out.log
+server.err.log
+data/*.pid
+data/orders.json
