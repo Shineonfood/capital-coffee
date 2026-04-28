@@ -1,0 +1,173 @@
+.switch-control {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 54px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.switch-control input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.switch-control span {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: #bac8c3;
+  transition: background 160ms ease;
+}
+
+.switch-control span::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: white;
+  box-shadow: 0 3px 8px rgba(23, 33, 43, 0.22);
+  transition: transform 160ms ease;
+}
+
+.switch-control input:checked + span {
+  background: var(--teal);
+}
+
+.switch-control input:checked + span::after {
+  transform: translateX(22px);
+}
+
+.editor-list {
+  display: grid;
+  gap: 12px;
+}
+
+.editor-row {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 10px 26px rgba(23, 33, 43, 0.05);
+}
+
+.editor-row-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.toggle-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 680;
+}
+
+.editor-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.menu-editor-grid {
+  grid-template-columns: minmax(240px, 1.4fr) 130px 190px;
+}
+
+.option-editor-grid {
+  grid-template-columns: minmax(220px, 1fr) 140px auto;
+  align-items: end;
+}
+
+.wide-field {
+  grid-column: 1 / -1;
+}
+
+.size-editor {
+  display: grid;
+  gap: 10px;
+}
+
+.size-editor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.size-editor-header label {
+  font-size: 0.84rem;
+  font-weight: 680;
+}
+
+.size-editor-list {
+  display: grid;
+  gap: 8px;
+}
+
+.size-editor-row {
+  display: grid;
+  grid-template-columns: 96px minmax(140px, 1fr) 120px auto;
+  gap: 8px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-2);
+}
+
+.size-editor-row input[type="text"],
+.size-editor-row input:not([type]),
+.size-editor-row input[type="number"] {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  padding: 8px 10px;
+  min-width: 0;
+}
+
+.add-editor-button {
+  justify-self: start;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.metric {
+  display: grid;
+  gap: 4px;
+  min-height: 78px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.metric strong {
+  font-size: 1.5rem;
+}
+
+.history-list {
+  display: grid;
+  gap: 8px;
+  max-height: 360px;
+  overflow: auto;
+  margin-top: 12px;
+}
+

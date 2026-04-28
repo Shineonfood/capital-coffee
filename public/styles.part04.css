@@ -1,0 +1,200 @@
+.check-list input[type="checkbox"],
+.toggle-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.form-actions .primary-button {
+  width: auto;
+}
+
+.confirmation {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  border-top: 1px solid var(--line);
+  background: var(--surface-2);
+}
+
+.confirmation strong {
+  font-size: 1.1rem;
+}
+
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: clamp(18px, 3vw, 28px);
+  align-items: start;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.queue-panel {
+  min-height: 460px;
+  overflow: hidden;
+}
+
+.queue-panel .panel-header {
+  padding: 0 0 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.count-badge {
+  display: inline-grid;
+  place-items: center;
+  min-width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--teal-dark);
+  font-weight: 780;
+}
+
+.ticket-list {
+  display: grid;
+  gap: 10px;
+  padding: 14px 0 0;
+}
+
+.ticket {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.ticket.making {
+  border-left-color: var(--blue);
+}
+
+.ticket.ready {
+  border-left-color: var(--ready);
+}
+
+.ticket-top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ticket-number {
+  display: inline-grid;
+  place-items: center;
+  min-width: 48px;
+  height: 38px;
+  padding: 0 10px;
+  border-radius: 8px;
+  background: var(--ink);
+  color: white;
+  font-weight: 800;
+}
+
+.ticket ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.ticket li {
+  margin: 6px 0;
+}
+
+.ticket-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ticket-actions .secondary-button,
+.ticket-actions .primary-button {
+  width: auto;
+  min-height: 40px;
+  padding: 0 12px;
+}
+
+.empty-column {
+  display: grid;
+  place-items: center;
+  min-height: 260px;
+  color: var(--muted);
+  text-align: center;
+  padding: 20px;
+}
+
+.summary-panel {
+  position: sticky;
+  top: 92px;
+  padding: 18px;
+}
+
+.compact-button {
+  width: auto;
+  min-height: 38px;
+  padding: 0 12px;
+}
+
+.portal-login-layout {
+  display: grid;
+  place-items: start center;
+}
+
+.portal-login {
+  width: min(460px, 100%);
+}
+
+.portal-layout {
+  width: min(1180px, 100%);
+}
+
+.portal-main {
+  display: grid;
+  gap: 16px;
+}
+
+.portal-heading {
+  align-items: flex-start;
+  padding: 0;
+}
+
+.save-button {
+  width: auto;
+}
+
+.portal-tabs {
+  padding: 0;
+}
+
+.portal-setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.portal-setting-row strong {
+  display: block;
+  margin-bottom: 3px;
+}
+

@@ -1,0 +1,15 @@
+{
+  "name": "Capital Coffee",
+  "short_name": "Capital",
+  "start_url": "/order",
+  "display": "standalone",
+  "background_color": "#f7f8f5",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

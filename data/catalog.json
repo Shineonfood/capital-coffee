@@ -1,0 +1,267 @@
+﻿{
+    "adminPassword":  "capitalcoffee",
+    "showPrice":  false,
+    "menu":  [
+                 {
+                     "id":  "latte",
+                     "name":  "Latte",
+                     "group":  "espresso",
+                     "description":  "Espresso with steamed milk and a soft finish.",
+                     "price":  4.75,
+                     "art":  "hot",
+                     "active":  true,
+                     "sizes":  [
+                                   {
+                                       "id":  "regular",
+                                       "name":  "Regular",
+                                       "price":  0,
+                                       "active":  true
+                                   }
+                               ]
+                 },
+                 {
+                     "id":  "cappuccino",
+                     "name":  "Cappuccino",
+                     "group":  "espresso",
+                     "description":  "Espresso, steamed milk, and a thicker cap of foam.",
+                     "price":  4.5,
+                     "art":  "hot",
+                     "active":  true,
+                     "sizes":  [
+                                   {
+                                       "id":  "regular",
+                                       "name":  "Regular",
+                                       "price":  0,
+                                       "active":  true
+                                   }
+                               ]
+                 },
+                 {
+                     "id":  "americano",
+                     "name":  "Americano",
+                     "group":  "espresso",
+                     "description":  "Espresso stretched with hot water.",
+                     "price":  3.5,
+                     "art":  "hot",
+                     "active":  true,
+                     "sizes":  [
+                                   {
+                                       "id":  "small",
+                                       "name":  "Small",
+                                       "price":  -0.35,
+                                       "active":  true
+                                   },
+                                   {
+                                       "id":  "regular",
+                                       "name":  "Regular",
+                                       "price":  0,
+                                       "active":  true
+                                   }
+                               ]
+                 },
+                 {
+                     "id":  "flat-white",
+                     "name":  "Flat White",
+                     "group":  "espresso",
+                     "description":  "Double espresso with silky microfoam.",
+                     "price":  4.85,
+                     "art":  "hot",
+                     "active":  true,
+                     "sizes":  [
+                                   {
+                                       "id":  "regular",
+                                       "name":  "Regular",
+                                       "price":  0,
+                                       "active":  true
+                                   }
+                               ]
+                 },
+                 {
+                     "id":  "drip",
+                     "name":  "Drip Coffee",
+                     "group":  "coffee",
+                     "description":  "Fresh batch brew, clean and balanced.",
+                     "price":  3,
+                     "art":  "hot",
+                     "active":  true,
+                     "sizes":  [
+                                   {
+                                       "id":  "regular",
+                                       "name":  "Regular",
+                                       "price":  0,
+                                       "active":  true
+                                   },
+                                   {
+                                       "id":  "large",
+                                       "name":  "Large",
+                                       "price":  0.75,
+                                       "active":  true
+                                   }
+                               ]
+                 },
+                 {
+                     "id":  "pour-over",
+                     "name":  "Pour Over",
+                     "group":  "coffee",
+                     "description":  "Made to order for a brighter cup.",
+                     "price":  5.25,
+                     "art":  "hot",
+                     "active":  true,
+                     "sizes":  [
+                                   {
+                                       "id":  "regular",
+                                       "name":  "Regular",
+                                       "price":  0,
+                                       "active":  true
+                                   }
+                               ]
+                 },
+                 {
+                     "id":  "cold-brew",
+                     "name":  "Cold Brew",
+                     "group":  "coffee",
+                     "description":  "Slow-steeped coffee served over ice.",
+                     "price":  4.5,
+                     "art":  "cold",
+                     "active":  true,
+                     "sizes":  [
+                                   {
+                                       "id":  "small",
+                                       "name":  "Small",
+                                       "price":  -0.35,
+                                       "active":  true
+                                   },
+                                   {
+                                       "id":  "regular",
+                                       "name":  "Regular",
+                                       "price":  0,
+                                       "active":  true
+                                   }
+                               ]
+                 },
+                 {
+                     "id":  "iced-latte",
+                     "name":  "Iced Latte",
+                     "group":  "coffee",
+                     "description":  "Espresso and cold milk over ice.",
+                     "price":  5,
+                     "art":  "cold",
+                     "active":  true,
+                     "sizes":  [
+                                   {
+                                       "id":  "small",
+                                       "name":  "Iced Cortado",
+                                       "price":  -0.35,
+                                       "active":  true
+                                   },
+                                   {
+                                       "id":  "regular",
+                                       "name":  "Regular",
+                                       "price":  0,
+                                       "active":  true
+                                   },
+                                   {
+                                       "id":  "large",
+                                       "name":  "Large",
+                                       "price":  0.75,
+                                       "active":  true
+                                   }
+                               ]
+                 },
+                 {
+                     "id":  "croissant",
+                     "name":  "Croissant",
+                     "group":  "food",
+                     "description":  "Buttery, flaky, and warmed on request.",
+                     "price":  3.75,
+                     "art":  "food",
+                     "active":  true,
+                     "sizes":  [
+                                   {
+                                       "id":  "regular",
+                                       "name":  "Regular",
+                                       "price":  0,
+                                       "active":  true
+                                   }
+                               ]
+                 },
+                 {
+                     "id":  "banana-bread",
+                     "name":  "Banana Bread",
+                     "group":  "food",
+                     "description":  "Thick slice with a toasted edge.",
+                     "price":  3.95,
+                     "art":  "food",
+                     "active":  true,
+                     "sizes":  [
+                                   {
+                                       "id":  "regular",
+                                       "name":  "Regular",
+                                       "price":  0,
+                                       "active":  true
+                                   }
+                               ]
+                 },
+                 {
+                     "id":  "menu-item-mohg1du4",
+                     "name":  "Iced Tea",
+                     "group":  "tea",
+                     "description":  "Flash-brewed iced green tea",
+                     "price":  5,
+                     "art":  "cold",
+                     "active":  true,
+                     "sizes":  [
+                                   {
+                                       "id":  "regular",
+                                       "name":  "Regular",
+                                       "price":  0,
+                                       "active":  true
+                                   }
+                               ]
+                 }
+             ],
+    "milks":  [
+                  {
+                      "id":  "whole",
+                      "name":  "Whole milk",
+                      "price":  0,
+                      "active":  true
+                  },
+                  {
+                      "id":  "oat",
+                      "name":  "Oat milk",
+                      "price":  0.75,
+                      "active":  true
+                  },
+                  {
+                      "id":  "almond",
+                      "name":  "Almond milk",
+                      "price":  0.75,
+                      "active":  true
+                  },
+                  {
+                      "id":  "none",
+                      "name":  "No milk",
+                      "price":  0,
+                      "active":  true
+                  }
+              ],
+    "syrups":  [
+                   {
+                       "id":  "vanilla",
+                       "name":  "Vanilla",
+                       "price":  0.75,
+                       "active":  true
+                   },
+                   {
+                       "id":  "caramel",
+                       "name":  "Caramel",
+                       "price":  0.75,
+                       "active":  true
+                   }
+               ],
+    "addOns":  [
+
+               ],
+    "updatedAt":  "2026-04-27T17:11:47.6735720Z"
+}
