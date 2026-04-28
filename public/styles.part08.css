@@ -1,0 +1,119 @@
+.menu-grid {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.menu-card {
+  grid-template-rows: auto 1fr auto;
+  min-height: 226px;
+}
+
+.menu-card::before {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 62px;
+  margin-bottom: 12px;
+  border: 2px solid rgba(23, 33, 43, 0.72);
+  border-top-width: 5px;
+  border-radius: 8px 8px 16px 16px;
+  background: linear-gradient(to top, #6a4a35 0 100%);
+  box-shadow: 14px 10px 0 -8px rgba(23, 33, 43, 0.72), 0 8px 18px rgba(23, 33, 43, 0.08);
+}
+
+.menu-card:has(.drink-diagram)::before,
+.menu-card[data-open-item="croissant"]::before,
+.menu-card[data-open-item="banana-bread"]::before {
+  display: none;
+}
+
+.menu-card h3::after {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 680;
+  line-height: 1.25;
+}
+
+.menu-card[data-open-item="latte"]::before {
+  background: linear-gradient(to top, #3b251d 0 22%, #f1eadc 22% 84%, #fffaf0 84% 100%);
+}
+
+.menu-card[data-open-item="latte"] h3::after {
+  content: "espresso / steamed milk / foam";
+}
+
+.menu-card[data-open-item="cappuccino"]::before {
+  background: linear-gradient(to top, #3b251d 0 30%, #f1eadc 30% 62%, #fffaf0 62% 100%);
+}
+
+.menu-card[data-open-item="cappuccino"] h3::after {
+  content: "espresso / milk / thick foam";
+}
+
+.menu-card[data-open-item="americano"]::before {
+  background: linear-gradient(to top, #3b251d 0 28%, #9bc9df 28% 100%);
+}
+
+.menu-card[data-open-item="americano"] h3::after {
+  content: "espresso / hot water";
+}
+
+.menu-card[data-open-item="flat-white"]::before {
+  background: linear-gradient(to top, #3b251d 0 34%, #f1eadc 34% 82%, #fffaf0 82% 100%);
+}
+
+.menu-card[data-open-item="flat-white"] h3::after {
+  content: "double espresso / milk / microfoam";
+}
+
+.menu-card[data-open-item="drip"]::before {
+  background: linear-gradient(to top, #6a4a35 0 100%);
+}
+
+.menu-card[data-open-item="drip"] h3::after {
+  content: "batch brewed coffee";
+}
+
+.menu-card[data-open-item="pour-over"]::before {
+  background:
+    linear-gradient(150deg, transparent 0 42%, rgba(255, 255, 255, 0.32) 43% 50%, transparent 51% 100%),
+    linear-gradient(to top, #7a563d 0 100%);
+}
+
+.menu-card[data-open-item="pour-over"] h3::after {
+  content: "hand poured brewed coffee";
+}
+
+.menu-card[data-open-item="cold-brew"]::before {
+  background:
+    radial-gradient(circle at 19px 16px, #d6eef4 0 5px, transparent 6px),
+    radial-gradient(circle at 44px 23px, #d6eef4 0 5px, transparent 6px),
+    linear-gradient(to top, #5a3d2e 0 76%, #d6eef4 76% 100%);
+}
+
+.menu-card[data-open-item="cold-brew"] h3::after {
+  content: "cold brew / ice";
+}
+
+.menu-card[data-open-item="iced-latte"]::before {
+  background:
+    radial-gradient(circle at 18px 15px, #d6eef4 0 5px, transparent 6px),
+    radial-gradient(circle at 45px 21px, #d6eef4 0 5px, transparent 6px),
+    linear-gradient(to top, #3b251d 0 22%, #f1eadc 22% 76%, #d6eef4 76% 100%);
+}
+
+.menu-card[data-open-item="iced-latte"] h3::after {
+  content: "espresso / cold milk / ice";
+}
+
+.menu-card[data-open-item="menu-item-mohg1du4"]::before {
+  background:
+    radial-gradient(circle at 18px 15px, #d6eef4 0 5px, transparent 6px),
+    radial-gradient(circle at 45px 21px, #d6eef4 0 5px, transparent 6px),
+    linear-gradient(to top, #88a861 0 76%, #d6eef4 76% 100%);
+}
+
+.menu-card[data-open-item="menu-item-mohg1du4"] h3::after {
+  content: "tea / ice";
+}
